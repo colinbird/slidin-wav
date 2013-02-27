@@ -11,53 +11,45 @@ class GraphController extends Controller
 		$flowDataProvider->criteria->condition = "value>0";
 
 		$levelDataProvider=new CActiveDataProvider('PortLevel',$criteria);
-                $levelDataProvider->criteria->select = "id,date,DATE(date) as day_date,avg(value) as value";
+		$levelDataProvider->criteria->select = "id,date,DATE(date) as day_date,avg(value) as value";
 		$levelDataProvider->criteria->group = "day_date";
 
-		$surfLogDataProvider=new CActiveDataProvider('SurfLog',$criteria);
+		$surfLogDataProvider=new CActiveDataProvider('Surflog',$criteria);
+
+		$flow_arr = $flowDataProvider->getData();
+		$flow_data = array();
+		foreach ($flow_arr as $flow) {
+			$flow_data[] = array($flow->getUnixDate()*1000, $flow->value);
+		}
+		$level_arr = $levelDataProvider->getData();
+		$level_data = array();
+		foreach ($level_arr as $level) {
+			$level_data[] = array($level->getUnixDate()*1000, $level->value);
+		}
+		$surflog_arr = $surfLogDataProvider->getData();
+		$surflog_data = array();
+		$js_notes = "[";
+		foreach ($surflog_arr as $surflog) {
+			$surflog_data[] = array($surflog->getUnixDate()*1000, $surflog->flow);
+			$mainwave_data[] = array($surflog->getUnixDate()*1000, ($surflog->rating/3)-1);
+			$rightsides_data[] = array($surflog->getUnixDate()*1000, ($surflog->right_rating/3)-1);
+
+			$notes = "Flow:".$surflog->flow." <BR>Main:" . $surflog->rating ."/10 (".$surflog->whiteness."% whiteness)" . "<BR>RS: " . $surflog->right_rating . "/10 (" . $surflog->right_whiteness ."% whiteness)" . "<BR><BR>" . $surflog->notes;
+			$js_notes .= "[\"" . ($surflog->getUnixDate()*1000) . "\",\"".$notes."\"],";
+
+		}
+		$js_notes = rtrim($js_notes,",");
+		$js_notes .= "]";
 
 		$this->render('index',array(
-				'flowDataProvider'=>$flowDataProvider,
-				'levelDataProvider'=>$levelDataProvider,
-				'surfLogDataProvider'=>$surfLogDataProvider,
-		));
+					'flow_data' => $flow_data,
+					'level_data' => $level_data,
+					'surflog_data' => $surflog_data,
+					'mainwave_data' => $mainwave_data,
+					'rightsides_data' => $rightsides_data,
+					'js_notes' => $js_notes,
+					));
 
 	}
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-
-		$this->render('index');
-	}
-
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
 }
