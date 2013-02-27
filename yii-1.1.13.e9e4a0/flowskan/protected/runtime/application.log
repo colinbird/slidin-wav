@@ -1,0 +1,894 @@
+2013/02/26 13:20:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (2)' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/flowskan/index.php?r=gii/model
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=gii
+---
+2013/02/26 13:25:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "graph".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 14:38:07 [error] [php] var_dump() expects at least 1 parameter, 0 given (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:11)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): MatchesController->renderInternal()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (11)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:38:16 [error] [php] Undefined variable: str (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:11)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (11)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:40:28 [error] [php] Undefined variable: data (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:12)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:41:06 [error] [php] Object of class CActiveDataProvider could not be converted to string (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:12)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:41:07 [error] [php] Object of class CActiveDataProvider could not be converted to string (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:12)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:42:29 [error] [php] Object of class CActiveDataProvider could not be converted to string (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:12)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:46:58 [error] [php] strpos() expects parameter 1 to be string, array given (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:706)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(867): MatchesController->getViewFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php(12): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): MatchesController->renderInternal()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:47:45 [error] [php] strpos() expects parameter 1 to be string, array given (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:706)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(867): MatchesController->getViewFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php(12): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): MatchesController->renderInternal()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:47:46 [error] [php] strpos() expects parameter 1 to be string, array given (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:706)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(867): MatchesController->getViewFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php(12): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): MatchesController->renderInternal()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 14:48:37 [error] [php] Object of class Flow could not be converted to string (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:14)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(13): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (14)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (13)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:06:07 [error] [php] Undefined variable: dataProvider (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php:20)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (20)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:06:36 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:17)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(21): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (17)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (21)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:06:37 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:17)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(21): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (17)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (21)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:15:41 [error] [php] Undefined variable: dataProvider (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php:39)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): MatchesController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): MatchesController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(21): MatchesController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): MatchesController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): MatchesController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): MatchesController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=matches
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (39)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (21)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:18:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "search/search".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('search/search')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=search%2Fsearch&flow=&level=&yt0=Go%21
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=matches
+---
+2013/02/26 15:18:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "matches".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('matches')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('matches')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('matches/matches')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/flowskan/index.php?r=matches%2Fmatches&flow=&level=&yt0=Go%21
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=matches
+---
+2013/02/26 15:26:52 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'flow' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `flow` `t` WHERE flow BETWEEN 6800 AND 7000.
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php (21)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php (25)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 15:26:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'flow' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `flow` `t` WHERE flow BETWEEN 6800 AND 7000' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/matches/index.php(21): CDataProvider->getData()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/MatchesController.php(25): CController->render('index', Array)
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): MatchesController->actionIndex()
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('index')
+#17 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('matches/index')
+#18 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/flowskan/index.php?r=matches%2Findex&flow=6900&level=&yt0=Go%21
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=matches%2Findex&flow=&level=&yt0=Go%21
+---
+2013/02/26 16:50:06 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.limit" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CActiveDataProvider.php(83): CComponent->__set('limit', 0)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(9): CActiveDataProvider->__construct('Flow', Array)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 16:50:07 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.limit" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CActiveDataProvider.php(83): CComponent->__set('limit', 0)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(9): CActiveDataProvider->__construct('Flow', Array)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 17:00:31 [error] [exception.CException] exception 'CException' with message 'Property "Flow.unix_date" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(143): CComponent->__get('unix_date')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(12): CActiveRecord->__get('unix_date')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(17): CController->render('index', Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 17:04:10 [error] [exception.CException] exception 'CException' with message 'PortLevel and its behaviors do not have a method or closure named "getUnixDate".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:265
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(225): CComponent->__call('getUnixDate', Array)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(17): CActiveRecord->__call('getUnixDate', Array)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(17): PortLevel->getUnixDate()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(17): CController->render('index', Array)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 17:54:43 [error] [php] Undefined variable: flow_data (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php:29)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): GraphController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): GraphController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(18): GraphController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php (29)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (18)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 17:54:54 [error] [php] Undefined variable: level_data (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php:36)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): GraphController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): GraphController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(18): GraphController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php (36)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (18)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 17:59:32 [error] [php] Attempt to assign property of non-object (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php:11)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (11)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 17:59:33 [error] [php] Attempt to assign property of non-object (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php:11)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (11)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 18:41:45 [error] [php] Undefined variable: surflog_arr (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php:21)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): GraphController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): GraphController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): GraphController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php (21)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (23)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 18:41:59 [error] [exception.CException] exception 'CException' with message 'Surflog and its behaviors do not have a method or closure named "getUnixDate".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:265
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(225): CComponent->__call('getUnixDate', Array)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(22): CActiveRecord->__call('getUnixDate', Array)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(22): Surflog->getUnixDate()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): CController->render('index', Array)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 18:42:19 [error] [exception.CException] exception 'CException' with message 'Property "Surflog.value" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(22): CActiveRecord->__get('value')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): CController->render('index', Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 18:42:21 [error] [exception.CException] exception 'CException' with message 'Property "Surflog.value" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(22): CActiveRecord->__get('value')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): CController->render('index', Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 18:42:23 [error] [exception.CException] exception 'CException' with message 'Property "Surflog.value" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(22): CActiveRecord->__get('value')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): CController->render('index', Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 20:39:43 [error] [exception.CException] exception 'CException' with message 'Property "EFlotGraphWidget.zoom" is not defined.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWidgetFactory.php(161): CComponent->__set('zoom', Array)
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GraphController), 'application.ext...', Array)
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php(97): CBaseController->widget('application.ext...', Array)
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Users/colin/wo...')
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/colin/wo...', Array, true)
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Users/colin/wo...', Array, true)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): CController->render('index', Array)
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#14 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('graph')
+#15 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/flowskan/index.php?r=graph
+---
+2013/02/26 21:46:27 [error] [php] Undefined variable: row (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php:23)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): GraphController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): GraphController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php(23): GraphController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): GraphController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): GraphController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): GraphController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): GraphController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=graph
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/graph/index.php (23)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/GraphController.php (23)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:14:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/admin')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/admin
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=surflog/index
+---
+2013/02/26 23:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "observation/submit".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation/sub...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+---
+2013/02/26 23:26:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "observation".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=observation
+---
+2013/02/26 23:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "observation/submit".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation/sub...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+---
+2013/02/26 23:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "submit".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('submit')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('submit')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation/sub...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+---
+2013/02/26 23:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "submit".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('submit')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('submit')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation/sub...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+---
+2013/02/26 23:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "submit".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('submit')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('submit')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('observation/sub...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+---
+2013/02/26 23:27:22 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php:16)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ObservationController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ObservationController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php(7): ObservationController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ObservationController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ObservationController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ObservationController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ObservationController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=observation
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php (16)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php (7)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:27:23 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php:16)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ObservationController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ObservationController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php(7): ObservationController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ObservationController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ObservationController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ObservationController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ObservationController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=observation
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php (16)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php (7)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:27:27 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php:16)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ObservationController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ObservationController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php(7): ObservationController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ObservationController->actionIndex()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ObservationController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ObservationController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ObservationController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=observation/index
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php (16)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php (7)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:28:25 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php:16)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ObservationController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ObservationController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php(12): ObservationController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ObservationController->actionSubmit()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ObservationController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ObservationController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ObservationController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php (16)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:28:26 [error] [php] Undefined variable: model (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php:16)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ObservationController->renderFile()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ObservationController->renderPartial()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php(12): ObservationController->render()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ObservationController->actionSubmit()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ObservationController->runAction()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ObservationController->runActionWithFilters()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ObservationController->run()
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=observation/submit
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/views/observation/submit.php (16)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/ObservationController.php (12)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
+2013/02/26 23:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "observation".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('observation')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:30:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:30:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:30:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:30:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:336
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:30:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:336
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:31:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php:336
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('observation')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/observa...')
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/observation
+---
+2013/02/26 23:32:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/admin')
+#9 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/admin
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=surflog/create
+---
+2013/02/26 23:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "surflog/create".' in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('surflog/create')
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/flowskan/index.php?r=surflog/create
+HTTP_REFERER=http://127.0.0.1:81/flowskan/index.php?r=graph/index
+---
+2013/02/27 00:48:19 [error] [php] Undefined index: SurfLog (/Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/SiteController.php:125)
+Stack trace:
+#0 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): SiteController->runAction()
+#1 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php(13): CWebApplication->run()
+REQUEST_URI=/flowskan/index.php?r=site/observation
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/protected/controllers/SiteController.php (125)
+in /Users/colin/work/ilabs/flowskan/yii-1.1.13.e9e4a0/flowskan/index.php (13)
