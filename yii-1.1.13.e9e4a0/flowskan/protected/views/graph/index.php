@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 <?
 $this->widget("application.extensions.EFlot.EFlotGraphWidget", 
     array(
-	"id"=>"graphclick",
+		"id"=>"graphclick",
         "data"=>array(
 				array(
 						"label"=> "Flow", 
@@ -54,8 +54,8 @@ $this->widget("application.extensions.EFlot.EFlotGraphWidget",
 ?>
 <script lang="javascript">
 
- function showTooltip(x, y, contents) {
-        $('<div id="tooltip">' + contents + '</div>').css( {
+function showTooltip(x, y, contents) {
+	$('<div id="tooltip">' + contents + '</div>').css( {
             position: 'absolute',
             display: 'none',
             top: y + 5,
@@ -64,14 +64,13 @@ $this->widget("application.extensions.EFlot.EFlotGraphWidget",
             padding: '2px',
             'background-color': '#fee',
             opacity: 0.80
-        }).appendTo("body").fadeIn(200);
-    }
-
+	}).appendTo("body").fadeIn(200);
+}
 
 $(document).ready(function() {
-var notes = <?=$js_notes?>;
-var graphclick = $("#graphclick");
-graphclick.bind("plotclick", function (event, pos, item) {
+	var notes = <?=$js_notes?>;
+	var graphclick = $("#graphclick");
+	graphclick.bind("plotclick", function (event, pos, item) {
         if (item) {
             $("#clickmessage").text("You clicked point " + item.dataIndex + " in " + item.series.label + ".");
         }
@@ -82,12 +81,14 @@ graphclick.bind("plotclick", function (event, pos, item) {
         $("#x").text(pos.x.toFixed(2));
         $("#y").text(pos.y.toFixed(2));
 
+		// attempt to display observation tooltip
 		if (item) {
 	        if (item.series.label = "Observations") {
 				x = item.datapoint[0].toFixed(2),
 				$("#tooltip").remove();
 				var d= new Date(parseFloat(x)); if (d != null) { d = d.toString()} 
 				var noteStr = "";
+				// iterate through notes array, there has to be a better way
 				for ( var i=0, len=notes.length; i<len; ++i ){
 					if (item.datapoint[0] == notes[i][0]) {
 						noteStr = notes[i][1];
@@ -101,8 +102,6 @@ graphclick.bind("plotclick", function (event, pos, item) {
         }
 	});
 });
-
-
 </script>
 <div id="clickmessage">
 </div>

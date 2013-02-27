@@ -7,6 +7,7 @@ class GraphController extends Controller
 
 		$criteria = array("criteria"=>array("limit"=>10000),'pagination'=>false);
 
+		// setup data providers
 		$flowDataProvider=new CActiveDataProvider('Flow',$criteria);
 		$flowDataProvider->criteria->condition = "value>0";
 
@@ -16,6 +17,7 @@ class GraphController extends Controller
 
 		$surfLogDataProvider=new CActiveDataProvider('Surflog',$criteria);
 
+		// create arrays to bake into JS
 		$flow_arr = $flowDataProvider->getData();
 		$flow_data = array();
 		foreach ($flow_arr as $flow) {
@@ -26,6 +28,8 @@ class GraphController extends Controller
 		foreach ($level_arr as $level) {
 			$level_data[] = array($level->getUnixDate()*1000, $level->value);
 		}
+
+		// when assemblig the surflog array, create javascript arrays for looking up notes and ratings
 		$surflog_arr = $surfLogDataProvider->getData();
 		$surflog_data = array();
 		$js_notes = "[";
